@@ -7,12 +7,12 @@ import "./globals.css";
 const workSans = Work_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Let Him Cook",
-  description: "A AI-powered recipe generator that comes up with creative recipes with available ingredients.",
+  title: "Let me Cook",
+  description: "An AI-powered recipe generator that cooks up with creative recipes, with available ingredients.",
   openGraph:{
     type: "website",
     url: "",
-    siteName: "Let him Cook",
+    siteName: "Let me Cook",
     images: "/bot-chef.png"
   }
 };
