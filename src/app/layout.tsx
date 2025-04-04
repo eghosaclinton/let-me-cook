@@ -8,6 +8,7 @@ const workSans = Work_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Let me Cook",
+  icons: "https://let-me-coook.vercel.app/robo-chef.png",
   description: "An AI-powered recipe generator that cooks up with creative recipes, with available ingredients.",
   openGraph:{
     type: "website",
