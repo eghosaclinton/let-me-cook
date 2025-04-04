@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description: "An AI-powered recipe generator that cooks up with creative recipes, with available ingredients.",
   openGraph:{
     type: "website",
-    url: "",
+    url: "https://let-me-coook.vercel.app",
     siteName: "Let me Cook",
-    images: "/bot-chef.png"
+    images: "https://let-me-coook.vercel.app/robo-chef.png"
   }
 };
 
