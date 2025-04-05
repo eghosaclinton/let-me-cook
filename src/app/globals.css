@@ -12,6 +12,10 @@
 
 }
 
+.recipe > h2, .ingredients > h2{
+  font-family: var(--pacifico);
+}
+
 
 body {
   color: var(--paragraph);

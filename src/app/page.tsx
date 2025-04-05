@@ -1,5 +1,4 @@
 import Recipes from '@/components/Recipe'
-import { pacifico } from './layout'
 import Ingredients from '@/components/Ingredients'
 export default function Home() {
     return (
@@ -8,15 +7,15 @@ export default function Home() {
                 An AI-powered recipe generator that cooks up with creative
                 recipes, with available ingredients.
             </p>
-            <div className="flex flex-col gap-4 ingregients">
-                <h2 className={`${pacifico.className} text-2xl underline`}>
+            <div className="flex flex-col gap-4 ingredients">
+                <h2 className={`text-2xl underline`}>
                     Ingredients
                 </h2>
 
                 <Ingredients />
             </div>
             <div className="recipe">
-                <h2 className={`${pacifico.className} text-2xl underline`}>
+                <h2 className={`text-2xl underline`}>
                     Recipes
                 </h2>
                 <Recipes />

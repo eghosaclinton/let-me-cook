@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import './globals.css'
 
 const quicksand = Quicksand({ subsets: ['latin'] })
-export const pacifico = Pacifico({ weight: '400', subsets: ['latin'] })
+const pacifico = Pacifico({ weight: '400', subsets: ['latin'], variable: "--pacifico" })
 
 export const metadata: Metadata = {
     title: 'Let me Cook',
@@ -28,7 +28,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${quicksand.className} antialiased max-w-[1024px] mx-auto`}
+                className={`${quicksand.className} ${pacifico.variable} antialiased max-w-[1024px] mx-auto`}
             >
                 <Header />
                 {children}
