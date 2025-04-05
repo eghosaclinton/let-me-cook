@@ -1,7 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server'
 
-export function GET(){
+export function GET() {
     return NextResponse.json({
-        "Hello": "world"
+        Hello: 'world',
     })
 }

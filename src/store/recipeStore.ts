@@ -1,17 +1,20 @@
-import { create } from "zustand";
+import { create } from 'zustand'
 
-type Ingredient ={
+export type Ingredient = {
     name: string
-    quantity: number
+    quantity: string
+    id: number
 }
 
 type RecipeStore = {
-    ingredients: Ingredient [];
-    setIngredients: (newState: Ingredient[])=>void
+    ingredients: Ingredient[]
+    setIngredients: (newState: Ingredient[]) => void
 }
 
-
-export const useRecipeStore = create<RecipeStore>((set)=>({
-    ingredients: [],
-    setIngredients: (newState)=>set({ingredients: newState})
+export const useRecipeStore = create<RecipeStore>((set) => ({
+    ingredients: [
+        { name: 'eggs', quantity: '2', id: 1 },
+        { name: 'salt', quantity: '1', id: 2 },
+    ],
+    setIngredients: (newState) => set({ ingredients: newState }),
 }))

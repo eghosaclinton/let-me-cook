@@ -3,14 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #f1e6d4;
+  --secondary: #f5b96b ;
+  --accent: #c97c5d;
+  --text: #3d2c2a;
+  --success: #a6c48a;
+  --paragraph: #5a4e4b;
+
 }
 
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--paragraph);
+  background: var(--primary);
+}
+
+h1, h2, h3 {
+  color: var(--text);
 }
 
 @layer utilities {

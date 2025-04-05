@@ -1,7 +1,7 @@
-import { type NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from 'next/server'
 
-export function POST(req: NextRequest){
+export function POST(req: NextRequest) {
     return NextResponse.json({
-        GET: req.body ? "yeah" : "nah"
+        GET: req.body ? 'yeah' : 'nah',
     })
 }
